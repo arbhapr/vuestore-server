@@ -1,0 +1,30 @@
+{
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongoose": "^8.4.0"
+  },
+  "name": "vuestore-server",
+  "version": "1.0.0",
+  "description": "vuestore-server",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arbhapr/vuestore-server.git"
+  },
+  "keywords": [
+    "node.js",
+    "express.js",
+    "mongodb",
+    "rest",
+    "api"
+  ],
+  "author": "Arbha Pradana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arbhapr/vuestore-server/issues"
+  },
+  "homepage": "https://github.com/arbhapr/vuestore-server#readme"
+}
