@@ -17,7 +17,8 @@ exports.findOrder = (req, res) => {
         }
     }])
         .then((result) => {
-            res.send(result)
+            // aggregate always return array
+            res.send(result[0])
         }).catch((err) => {
             res.status(409).send({
                 message: err.message || "Some error occurred while retrieving orders.",

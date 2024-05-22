@@ -1,11 +1,15 @@
 const express = require('express');
 const app = express();
+const cors = require('cors');
 const path = require('path');
 const PORT = process.env.APP_PORT || 8000;
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use('/img', express.static(path.join(__dirname, '/public/img')));
+app.use(cors({
+    origin: 'http://localhost:8080'
+}));
 
 app.get('/', (req, res) => {
     res.json({
